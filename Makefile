@@ -15,13 +15,6 @@ CFLAGS += -Wall -Wextra -Werror -std=c++98
 
 all: $(BIN)
 
-#ifeq ($(shell <$(BASHRC) grep "alias $(NAME)="),)
-#	$(add_alias)
-#else
-#	$(remove_alias)
-#	$(add_alias)
-#endif
-
 $(BIN): $(OBJECTS) add_alias
 	$(CC) $(CFLAGS) $(OBJECTS) -o $(BIN)
 	@make clean --no-print-directory
