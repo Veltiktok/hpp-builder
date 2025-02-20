@@ -7,7 +7,7 @@ public:
 	className(void);
 	className(const className &);
 	~className(void);
-	className	&operator=(const className &);
+	className &operator=(const className &);
 
 private:
 	
